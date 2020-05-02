@@ -1,0 +1,154 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'Noah Bold';
+  src: local('Noah'), url('../../assets/fonts/Noah/Noah-Bold.woff') format('woff');
+
+}
+
+@font-face {
+  font-family: 'Noah Bold Italic';
+  src: local('Noah'), url('../../assets/fonts/Noah/Noah-BoldItalic.woff') format('woff');
+
+}
+
+
+@font-face {
+  font-family: 'Noah Regular';
+  src: local('Noah'), url('../../assets/fonts/Noah/Noah-Regular.woff') format('woff');
+
+}
+
+
+@font-face {
+  font-family: 'Noah Regular Italic';
+  src: local('Noah'), url('../../assets/fonts/Noah/Noah-RegularItalic.woff') format('woff');
+
+}
+
+*{
+  font-family: "Noah Regular";
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  height: 90vh;
+  display: flex;
+}
+
+.emailListing {
+  background: #F7F8F9;
+  flex: 1;
+margin: 0;
+}
+.mailTitle {
+  margin: 0;
+}
+.mailContainer {
+  flex: 2;
+}
+ul.emailListing {
+  padding-left: 0;
+  height: 100vh;
+  overflow: scroll;
+}
+
+ul.emailListing::-webkit-scrollbar {
+  display: none;
+}
+
+.mainContainer {
+  display: flex;
+}
+
+.list-item {
+  flex: 1;
+}
+.itemSelected {
+  background-color: #E5E5E5;
+}
+.emailItem {
+  &:hover {
+    cursor: pointer;
+  }
+  padding: 10px;
+}
+.bold {
+  font-family: "Noah Bold";
+}
+.fromLabel {
+  color:#A3A3A4;
+  font-family: "Noah Bold";
+}
+.subjectLabel {
+  display: flex;
+    align-items: center;
+  margin: O;
+}
+.mailContainerContent {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.fromName {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.snippet {
+  color: grey;
+}
+.searchScroll {
+  scroll-direction: horizontal;
+}
+.searchScroll {
+  padding: 15px 15px 15px 15px;
+}
+.searchItem {
+  background-color: #F0F0F0;
+  border-radius: 15px;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 0.8em;
+  font-font: "Noah Ligth";
+}
+.selected {
+  background-color: #00E6B3;
+}
+.containerSearchItem {
+  background-color: #F0F0F0;
+  padding: 5px;
+  border-radius: 15px;
+  overflow: scroll;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.red {
+  margin-right: 9px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: red;
+}
+.listingItemText {
+  flex: 1;
+}
+.successMessageContainer {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.successMessage {
+  color: #5CB85C;
+}
+.successCard {
+  background-color: #F9F9F9;
+  padding: 50px;
+  border-radius: 9px;
+}
